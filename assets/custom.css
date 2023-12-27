@@ -1,0 +1,35 @@
+/* File CSS terpisah untuk tampilan kustom */
+.custom-audio-player {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.audio-cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.audio-info {
+    text-align: center;
+    font-weight: bold;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.play-button, .pause-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

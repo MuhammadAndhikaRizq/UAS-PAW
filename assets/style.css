@@ -1,0 +1,144 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .carousel-item {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .overlay-card {
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+.hero-image {
+    position: relative;
+    height: 300px; /* Adjust as needed */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    min-height: 200px;
+}
+
+
+.campaign-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.campaign-card:hover {
+    transform: scale(1.05); /* Perbesar kartu saat dihover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat dihover */
+}
+
+.campaign-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.campaign-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.campaign-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.campaign-description {
+    color: #666;
+}
+
+.audio-player-container {
+    margin-top: 20px;
+}
+
+.audio-list {
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.audio-item {
+    margin-top: 10px;
+    overflow: visible; /* or overflow: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-link,
+.play-button {
+    background-color: #3498db; /* Ubah warna latar belakang tombol play */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.audio-link:hover,
+.play-button:hover {
+    background-color: #2980b9;
+}
+
+.download-button {
+    background-color: #2ecc71; /* Ubah warna latar belakang tombol download */
+    color: white; /* Warna teks pada tombol download */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+     background-color: #27ae60;
+}
+/* Customize Plyr controls */
+.plyr--audio .plyr__controls {
+    background: transparent; /* Make controls transparent */
+    justify-content: space-between; /* Space out controls */
+}
+
+/* Style circular play/pause button */
+.plyr--audio .plyr__control {
+    background: #2ecc71; /* Green background color */
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+}
